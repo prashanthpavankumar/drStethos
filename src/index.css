@@ -186,19 +186,20 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 0;
 }
 
-/* Updated Mouse Trail for Brighter/Sharper Look */
+/* Updated Mouse Trail to be subtle background effect */
 .trail-particle {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #00ff88;
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 255, 136, 0.4);
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: 0 0 15px #00ff88, 0 0 30px #00ff88, 0 0 45px #00a651;
-    transform-origin: center center;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+    transform: translate(-50%, -50%); /* Centering */
+    mix-blend-mode: multiply;
 }
 
 #bg-3d-scene {
@@ -687,6 +688,12 @@ section {
 .how-box {
     position: relative;
     overflow: hidden;
+    z-index: 10;
+    flex: 1;
+    background: #f4fbf6;
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--brand-green-light);
 }
 
 .how-box > h3,
@@ -770,11 +777,11 @@ section {
     padding: 3rem 2rem;
     border: 1px solid #f1f5f9;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    transform-style: preserve-3d;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     position: relative;
+    z-index: 10;
 }
 
 .price-card.popular {
@@ -1047,6 +1054,8 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .feature-card.dark-theme:hover {

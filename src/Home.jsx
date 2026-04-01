@@ -117,12 +117,10 @@ function Home() {
             anime({
               targets: targetCards,
               opacity: [0, 1],
-              translateY: [150, 0],
-              translateZ: [300, 0],
-              rotateX: [45, 0],
-              duration: 1500,
-              delay: anime.stagger(250),
-              easing: 'easeOutElastic(1, .8)'
+              translateY: [40, 0],
+              duration: 1000,
+              delay: anime.stagger(150),
+              easing: 'easeOutCubic'
             });
           }
           entry.target.classList.add('animated-already');
@@ -194,7 +192,7 @@ function Home() {
           <h2>About DrStethos</h2>
           <p>Bridging the gap between hospitals and healthcare professionals</p>
         </div>
-        <div className="about-content 3d-target">
+        <div className="about-content">
           <div className="about-card">
             <h3>Our Mission</h3>
             <p>
@@ -310,7 +308,7 @@ function Home() {
           <div id="pricing-hospitals" className="pricing-wrapper active">
             <p className="pricing-desc">Maximize your recruitment reach.</p>
             <div className="pricing-grid">
-              <div className="price-card 3d-target 3d-rotate-card">
+              <div className="price-card">
                 <div className="plan-type">Silver</div>
                 <div className="price">₹3,000<span>/mo</span></div>
                 <p className="yearly-price">or ₹25,000/year (Save more!)</p>
@@ -324,7 +322,7 @@ function Home() {
                 </ul>
                 <button className="btn-primary outline">Select Silver</button>
               </div>
-              <div className="price-card popular 3d-target 3d-rotate-card">
+              <div className="price-card popular">
                 <div className="badge-popular">Most Popular</div>
                 <div className="plan-type">Gold</div>
                 <div className="price">₹7,500<span>/mo</span></div>
@@ -339,7 +337,7 @@ function Home() {
                 </ul>
                 <button className="btn-primary">Select Gold</button>
               </div>
-              <div className="price-card 3d-target 3d-rotate-card">
+              <div className="price-card">
                 <div className="plan-type">Platinum</div>
                 <div className="price">₹15,000<span>/mo</span></div>
                 <p className="yearly-price">or ₹1,25,000/year (Save more!)</p>
@@ -362,7 +360,7 @@ function Home() {
           <div id="pricing-doctors" className="pricing-wrapper active">
             <p className="pricing-desc">Accelerate your medical career effortlessly.</p>
             <div className="pricing-grid doctors-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))' }}>
-              <div className="price-card 3d-target 3d-rotate-card">
+              <div className="price-card">
                 <div className="plan-type">Basic</div>
                 <div className="price">₹499<span>/mo</span></div>
                 <p className="yearly-price">or ₹2,999/year (Best Value!)</p>
@@ -375,7 +373,7 @@ function Home() {
                 </ul>
                 <button className="btn-primary outline">Select Basic</button>
               </div>
-              <div className="price-card popular 3d-target 3d-rotate-card">
+              <div className="price-card popular">
                 <div className="badge-popular">Recommended</div>
                 <div className="plan-type">Premium</div>
                 <div className="price">₹999<span>/mo</span></div>

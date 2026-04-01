@@ -28,7 +28,7 @@ function Contact() {
 
   return (
     <main>
-      <div className="contact-container 3d-target 3d-rotate-card">
+      <div className="contact-container">
         <div className="section-title" style={{ marginBottom: '2rem' }}>
           <h2>Get In Touch</h2>
           <p>We are here to help you revolutionize your hiring process.</p>
